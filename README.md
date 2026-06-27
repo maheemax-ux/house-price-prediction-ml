@@ -50,8 +50,8 @@ Features
 ## 🤖 Models Used
 
 - Linear Regression
-- Decision Tree Regressor
 - Random Forest Regressor
+- Gradient Boosting Regressor
 
 ---
 
@@ -59,18 +59,17 @@ Features
 
 - Mean Absolute Error (MAE)
 - Mean Squared Error (MSE)
-- Root Mean Squared Error (RMSE)
 - R² Score
 
 ---
 
 ## 🏆 Model Comparison
 
-| Model | RMSE | R² Score |
+| Model | MSE | R² Score |
 |--------|------|----------|
-| Linear Regression | xx | xx |
-| Decision Tree | xx | xx |
-| Random Forest | xx | xx |
+| Random Forest | 0.253654 | 0.806431 |
+| Gradient Boosting | 0.271940 | 0.792477 |
+| Linear Regression | 0.555892 | 0.575788 |
 
 Best Performing Model
 
@@ -85,10 +84,10 @@ Random Forest identifies the most important features affecting house prices.
 Top Features include:
 
 - Median Income
-- Average Occupancy
+- Average Rooms
 - Latitude
 - Longitude
-
+- House Age
 ---
 
 ## 🛠 Technologies
@@ -118,7 +117,7 @@ pip install -r requirements.txt
 ## ▶ Run
 
 ```bash
-jupyter notebook day19.ipynb
+jupyter notebook day19.2.ipynb
 ```
 
 ---
@@ -141,7 +140,6 @@ house-price-prediction-ml/
 
 - Hyperparameter Tuning
 - XGBoost
-- Gradient Boosting
 - SHAP Explainability
 - Streamlit Dashboard
 - Flask API
